@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "flow": "flow check",
+    "start": "babel-node index.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-flow"
+    ]
+  },
+  "dependencies": {
+    "date-fns": "2.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/node": "7.8.7",
+    "@babel/preset-flow": "7.9.0",
+    "flow-bin": "0.125.1"
+  }
+}
