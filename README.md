@@ -10,16 +10,13 @@ npx flow
 
 Output:
 ```
-Error ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ index.js:3:20
+Error ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ index.js:3:20
 
-Dependencies of a @flow strict module must also be @flow strict! (nonstrict-import)
+Dependencies of a `@flow strict` module must also be `@flow strict`!
+(`nonstrict-import`)
 
-     1│ // @flow strict
-     2│
-     3│ const { format } = require("date-fns");
-     4│
-     5│ console.log(`Hello world! ${format(Date.now(), "dd.MM.yyyy")}`);
-     6│
+   3│ const { format } = require("date-fns");
+                         ^^^^^^^^^^^^^^^^^^^
 
 
 
